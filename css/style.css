@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+body{
+    background-color: #0E1717;
+    color:#EDF4ED
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: rgb(133,179,146);
+}
+
+nav.navbar{
+    padding: 2px 10%;
+}
+
+nav .nav-brand-text{
+    width: 145px;
+}
+
+nav .nav-brand-text p{
+    margin: 0;
+}
+
+nav .nav-brand-text .p1{
+    font-weight: bold;
+}
+
+nav a img{
+    height: 70px;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: #EDF4ED;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
+    color: #EDF4ED;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active{
+    color: #EDF4ED;
+    text-shadow: 1px 1px 10px #EDF4ED;
+    border-bottom: 2px solid #EDF4ED;
+    padding-bottom: 7px;
+}
+
+/* Welcome */
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcometext{
+    font-size: 4em ;
+    font-family: 'Montserrat', sans-serif;
+    width: 900;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+}
+
+
+
+/* Vision and Moto */
+
+#Vision-and-moto{
+    margin: 20px 10%;
+}
+
+#Vision-and-moto .vision-img{
+    margin: auto 0;
+    transform: scaleX(-1);  
+
+}
+
+#Vision-and-moto .vision-text{
+    margin-top: 80px;
+}
+
+#Vision-and-moto .vision-and-moto-head, .contact .svg h1, .container h1{
+    font-family: 'Audiowide', cursive;
+    color: #DD6031;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    overflow:hidden;
+}
+
+#Vision-and-moto .vision-and-moto-head span:after, .contact .svg h1:after, .container h1:after{
+    border-bottom: 8px #79B791 double; 
+    animation: move 3s ; 
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 80%; /* Change this to whatever width you want. */
+    animation: move 1s ; 
+}
+
+@keyframes move {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0%);}
+  }
+
+#Vision-and-moto .vision-pointer{
+    padding: 5px 15px;
+    margin: 7px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.07);
+    box-shadow: 0px 0px 18px rgba(0,0,0,0.16);
+}
+
+/* founders */
+
+.contain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
+    padding: 50px;     
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#Founders {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start ;
+    width: 100%;
+    margin-left: 70px;
+}
+
+#Founders .heading {
+    font-family: 'Audiowide', cursive;
+    color: #DD6031;
+    width: auto;
+}
+
+#Founders .founder {
+    display: flex;
+    width: 75%;
+    flex-flow: row nowrap;
+}
+
+#Founders .profilepic {
+    max-height: 10rem;
+    margin: 0 25px;
+    border-radius: 250px;
+}
+
+#Founders .textContent{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+#Founders .reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+    align-self: flex-end;
+    margin-right: 70px;
+}
+
+#Founders .textContentRight{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding-left: 10px;
+}
+
+#Founders .subHeading {
+    border-bottom: 3px #79B791 solid;
+    font-family: 'Audiowide';
+}
+
+#Founders ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#Founders .fa {
+    padding: 20px;
+    padding-top: 0;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #79B791;
+  }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 480px){
+    #Founders  .profilepic{
+        margin: 0 5px;
+        max-width: 8rem;
+    }
+}
+
+/* activity highlights*/
+
+/* activity highlights*/
+
+.contact{
+    position: relative;
+    height: 100%;
+   }
+
+.contact .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .svg h1{
+    margin: 15px 10%;
+}
+
+.contact .photo{
+    background-color: #edf4ed;
+    width:100%; 
+    border-radius: 10px;
+    padding: 90px 30px;
+}
+
+
+.photo .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+    border: 0px;
+}
+
+.photo .card:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.photo .card .greet{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo .card .greet img{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card .caption{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #79B791;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card:hover .caption{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.card .caption h3{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.card .caption p{
+    margin:  10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.card:hover .caption p{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+
+
+/*Events*/
+
+.container{
+    margin-top: 80px;
+    /* flex-wrap: wrap; */
+}
+
+.container .harry{
+    position: relative; 
+    width: 320px;
+    height: 420px;
+    margin:15px;
+    overflow: hidden;
+}
+
+.container .harry span{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.95;
+    background: #DD6031;
+    z-index: 1;
+    transition: width 0.5s, height 0.5s;
+}
+
+.container .harry:hover span{
+    width: 1000px;
+    height: 1000px;
+}
+
+.container .harry .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .harry .imgBx img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .harry .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.container .harry .content div{
+    padding: 40px;
+    color: white;
+    visibility: hidden;
+    opacity:0;
+    transform: translateY(50px);
+    transition: 0.2s;
+}
+
+.container .harry:hover .content div{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/*Contact us*/
+.contact-form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form{
+    display: flex;
+}
+
+.contact-form img{
+    height: 400px;
+}
+
+.contact-form h2{
+    font-family: 'Audiowide', cursive;
+    color: #DD6031;
+    font-size: 30px;
+    margin-left: -334px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.contact h2:before{
+    content: '';
+    position:absolute;
+    width:0;
+    height:0;
+}
+
+.contact-form h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 20%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid #79B791; /* This creates the border. Replace black with whatever color you want. */ 
+    animation: mymove 1s ;  
+}
+
+@keyframes mymove {
+    from {transform: translateX(-60%);}
+    to {transform: translateX(0%);}
+}
+
+.inputBox .far{
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 11px;
+    padding: 5px 20px;
+    background-color: #DD6031;
+    opacity: 40%;
+    border: 0px;
+    color: white;
+}
+
+.inputBox #subject{
+    border-radius: 10px;
+    margin: 6px;   
+    padding:20px;
+    background-color: #DD6031;
+    opacity: 40%;
+    border:0;
+    height:200px; 
+    width: 520px
+}
+
+.inputBox .btn{
+    border-radius: 10px;
+    border: 1px solid #79B791; 
+    background: none;
+    color: white;
+    width: 95%;
+    /* margin-left: 10px; */
+    /* padding: 10px 20px; */
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    overflow:hidden;
+}
+.inputBox .btn a{
+    color: white;
+    opacity: 0.8;
+}
+
+.inputBox .btn:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #DD6031;
+    opacity: 0.4;
+    z-index: -1 ;
+    border-radius: 0 0 50% 50%;
+    transition: all 0.5s;
+}
+
+.inputBox .btn:hover:before{
+    height: 190%;
+    
+}
+
+.inputBox .btn:hover{
+    color: white;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: #3B3B3B;
+    padding: 20px;
+}
+
+footer .footer-logo img{
+    width: 250px;
+}
+
+footer .address{
+    margin-bottom: 100px;
+}
+
+footer h1{
+    color: #DD6031;
+    font-size: 25px;
+}
+
+footer .lower-footer .line{
+    margin: 10px auto;
+    width: 60vw;
+    height: 1px;
+    background-color: #79B791;
+}
+
+footer .lower-footer{
+    text-align: center; 
+}
+
+@media (max-width: 1210px){
+    #Welcome{
+        width: 620px;
+    }
+}
+
+@media (max-width: 1024px){
+    .photo img{
+        height: 250px;
+    }  
+
+    .svg .photo .card{
+        height: 350px;
+        width: 250px;
+    }
+
+    .container{
+        margin-top: 70px;
+    }
+
+    .contact-form{
+        width:90%;
+        position: relative;
+        top: 0px;
+        margin-left: 40px;
+        margin:50px;
+    }
+
+    .contact-form img{
+        display: none;
+    }
+
+    .contact-form{
+        right: 0px;
+        top:0;
+        margin-left: 0%;
+        margin:30px;
+    }
+    
+}
+
+@media (max-width: 768px){
+
+    .container .harry{
+        height: 350px;
+        top: 0px;
+    }
+
+    .contact .svg h1:after{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 720px){
+
+    #Vision-and-moto .vision-and-moto-head{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px){
+    #Welcome{
+        width: 500px;
+    }
+
+    #Welcome .welcometext{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 633px){
+    .inputBox .far,.inputBox #subject,.inputBox .btn,.contact-form h2{
+        width: 350px;
+        margin-right: 50px;
+    }
+
+    footer{
+        padding: 20px 50px;
+    }
+
+    footer .address{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 501px){
+
+    #Vision-and-moto .vision-and-moto-head{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    #Welcome{
+        width: 380px;
+    }
+
+    #Welcome .welcometext{
+        font-size: 2.5em;
+    }
+}
+
+
+@media (max-width: 430px){
+    .img-fluid{
+        display: none;
+    }
+
+    .svg .photo{
+        display: block;
+    }
+
+    .contact .photo{
+        background-color: #edf4ed;
+        width:100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        height: 960px;
+        border-radius: 0px;
+    }
+
+    .contact .svg h1{
+        top: 0px;   
+    }
+
+    .contact{
+        top:0px;
+        height: 1000px;
+    }
+
+    .container {
+        width: 200px;
+        margin:0;
+        margin-left: 30px;
+    }
+
+    .container h1{
+        top:130px;
+    }
+
+    .container h1:after{
+        width: 90%;
+    }
+
+    .contact .svg h1:after{
+        width: 70%;
+    }
+
+    .container .harry{
+        align-items: center;
+        top:120px;
+    }
+
+    .contact-form{
+        width:90%;
+        position: relative;
+        top: 140px;
+        left: 0px;
+    }
+    
+    .inputBox .far{
+        border-radius: 10px;
+        width: 46%;
+    }
+}
+
+
+

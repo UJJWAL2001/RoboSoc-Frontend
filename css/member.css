@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+body{
+    background-color: #0E1717;
+    color:#EDF4ED
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: rgb(133,179,146);
+}
+
+nav.navbar{
+    padding: 2px 10%;
+}
+
+nav .nav-brand-text{
+    width: 145px;
+}
+
+nav .nav-brand-text p{
+    margin: 0;
+}
+
+nav .nav-brand-text .p1{
+    font-weight: bold;
+}
+
+nav a img{
+    height: 70px;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: #EDF4ED;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
+    color: #EDF4ED;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active{
+    color: #EDF4ED;
+    text-shadow: 1px 1px 10px #EDF4ED;
+    border-bottom: 2px solid #EDF4ED;
+    padding-bottom: 7px;
+}
+
+/* Welcome */
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Welcome{
+    z-index: 1;
+}
+
+.welcometext{
+    font-size: 1.5em ;
+    font-family: 'Montserrat', sans-serif;
+    width: 900;
+}
+
+.ml10 {
+    position: relative;
+}
+
+.ml10 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.ml10 .letter {
+display: inline-block;
+line-height: 1em;
+transform-origin: 0 0;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+    z-index: 0;
+}
+
+/* headings */
+
+.heading{
+    text-align: center;
+}
+
+/* Cards */
+
+.card{
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 4px solid #EDF4ED;
+    border-radius: 150px;
+    position: relative;
+    margin: 10px 0px 10px 70px;
+}
+
+.card .member-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.card p, .card img{
+    position: absolute;
+}
+
+.card .about-member{
+    font-size: 5px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 32px 20px 20px 20px;
+    border-radius: 150%;
+    background-color: rgba(133,179,146,0.8);
+    right: 96px;
+    bottom: 80px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .about-member{
+    opacity: 1;
+    transform: scale(2.95);
+}
+
+
+
+.card .ml13 .letter {
+    display: inline-block;
+    line-height: 0.3em;
+}
+
+.card .member-name, .card .member-post{
+    width: max-content;
+    text-align: right;
+    padding: 3px 5px 3px 40px;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(14,23,23,1) 0%, rgba(221,96,49,1) 100%);
+}
+
+.card .member-name{
+    font-weight: bold;
+    bottom: 55px;
+    right: 168px;
+}
+
+.card .member-post{
+    bottom: 18px;
+    right: 150px;
+}
+
+.card .icon{
+    width: 35px;
+    height: 35px;
+}
+
+.card .i1{
+    right: -20px;
+    bottom: 130px;
+}
+
+.card .i2{
+    right: -11px;
+    bottom: 78px;
+}
+
+.card .i3{
+    right: 17px;
+    bottom: 30px;
+}
+
+.card .i4{
+    right: 65px;
+    bottom: -5px;
+}
+
+.card .i5{
+    right: 130px;
+    bottom: -20px;
+}
+
+.card .icon{
+    transition: 0.5s;
+}
+
+.card .icon:hover{
+    box-shadow: 0px 0px 10px #DD6031;;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #3B3B3B;
+    padding: 20px;
+}
+
+footer .footer-logo img{
+    width: 250px;
+}
+
+footer .address{
+    margin-bottom: 100px;
+}
+
+footer h1{
+    color: #DD6031;
+    font-size: 25px;
+}
+
+footer .lower-footer .line{
+    margin: 10px auto;
+    width: 60vw;
+    height: 1px;
+    background-color: #79B791;
+}
+
+footer .lower-footer{
+    text-align: center; 
+}
+
+@media (max-width: 656px){
+    #Welcome{
+        width: 320px;
+    }
+
+}
+
+@media (max-width: 633px){
+
+    footer{
+        padding: 20px 50px;
+    }
+
+    footer .address{
+        margin-bottom: 10px;
+    }
+
+}
+
+

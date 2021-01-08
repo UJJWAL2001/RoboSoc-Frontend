@@ -7,6 +7,11 @@ body{
     color:#EDF4ED
 }
 
+::placeholder {
+    color:white;
+    opacity: 1;
+}
+
 /* NAVBAR */
 
 nav{
@@ -85,7 +90,6 @@ nav a img{
 #Vision-and-moto .vision-img{
     margin: auto 0;
     transform: scaleX(-1);  
-
 }
 
 #Vision-and-moto .vision-text{
@@ -447,18 +451,15 @@ form{
     border-radius: 10px;
     margin: 11px;
     padding: 5px 20px;
-    background-color: #DD6031;
-    opacity: 40%;
+    background-color: rgba(221, 96, 49, 0.4);
     border: 0px;
-    color: white;
 }
 
 .inputBox #subject{
     border-radius: 10px;
     margin: 6px;   
     padding:20px;
-    background-color: #DD6031;
-    opacity: 40%;
+    background-color: rgba(221, 96, 49, 0.4);
     border:0;
     height:200px; 
     width: 520px

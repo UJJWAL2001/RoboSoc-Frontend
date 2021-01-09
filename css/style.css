@@ -94,8 +94,9 @@ nav a img{
 #Vision-and-moto .vision-and-moto-head, .contact .svg h1, .container h1{
     font-family: 'Audiowide', cursive;
     color: #DD6031;
-    margin-bottom: 20px;
-    margin-left: 25px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 46px;
     overflow:hidden;
 }
 
@@ -614,9 +615,10 @@ footer .lower-footer{
 }
 
 @media (max-width: 633px){
-    .inputBox .far,.inputBox #subject,.inputBox .btn,.contact-form h2{
+    .inputBox .far,.inputBox #subject,.inputBox .btn,.inputBox #fname,.inputBox #email, .contact-form h2{
         width: 350px;
-        margin-right: 50px;
+        /* margin-right: 50px; */
+        margin-left: -30px;
     }
 
     footer{
@@ -633,7 +635,26 @@ footer .lower-footer{
 
     #Vision-and-moto .vision-and-moto-head{
         font-size: 2rem;
+        
     }
+}
+@media (max-width: 430px){
+
+    #Vision-and-moto .vision-and-moto-head{
+        /* font-size: 2rem; */
+        margin-left: -55px;
+        
+    }
+    #Vision-and-moto .vision-and-moto-head span:after, .contact .svg h1:after, .container h1:after{
+        border-bottom: 8px #79B791 double; 
+        animation: move 3s ; 
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        width: 80%; /* Change this to whatever width you want. */
+        animation: move 1s ;
+        margin-left: 42px; 
+    }
+    
 }
 
 @media (max-width: 500px){
@@ -683,7 +704,8 @@ footer .lower-footer{
     }
 
     .container h1{
-        top:130px;
+        top:80px;
+        margin-left: 2px;
     }
 
     .container h1:after{
@@ -695,15 +717,18 @@ footer .lower-footer{
     }
 
     .container .harry{
-        align-items: center;
-        top:120px;
+        /* align-items: center; */
+        margin-left: 180px;
+        /* top:120px; */
+        width: 150%;
     }
 
     .contact-form{
         width:90%;
         position: relative;
-        top: 140px;
-        left: 0px;
+        /* top: 140px; */
+        /* left: 0px; */
+        
     }
     
     .inputBox .far{

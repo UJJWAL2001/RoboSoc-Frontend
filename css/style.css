@@ -17,9 +17,8 @@ body{
 nav{
     background-color: rgb(133,179,146);
 }
-
-nav.navbar{
-    padding: 2px 10%;
+ nav .container{
+     margin-top: 0;
 }
 
 nav .nav-brand-text{
@@ -83,10 +82,6 @@ nav a img{
 
 /* Vision and Moto */
 
-/* #Vision-and-moto{
-    margin: 50px 10%;
-} */
-
 #Vision-and-moto .vision-img{
     transform: scaleX(-1);  
 }
@@ -136,7 +131,6 @@ nav a img{
     flex-flow: column;
     align-items: flex-start ;
     width: 100%;
-    margin-left: 70px;
 }
 
 #Founders .heading {
@@ -169,7 +163,6 @@ nav a img{
     flex-direction: row-reverse;
     text-align: right;
     align-self: flex-end;
-    margin-right: 70px;
 }
 
 #Founders .textContentRight{
@@ -243,11 +236,12 @@ opacity: 0.7;
 
 .photo .card{
     position: relative;
-    width: 300px;
+    width: 30%;
     height: 400px;
     background: #000;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
     border: 0px;
+    border-radius: 10px;
 }
 
 .photo .card:hover{
@@ -270,6 +264,10 @@ opacity: 0.7;
     width: 100%;
     object-fit: cover;
     transition: 0.5s;
+    border-radius: 10px;
+}
+.card .caption h3{
+    font-weight: bold;
 }
 
 .card .caption{
@@ -283,6 +281,8 @@ opacity: 0.7;
     overflow: hidden;
     padding: 15px;
     box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .card:hover .caption{
@@ -290,6 +290,18 @@ opacity: 0.7;
     height: 100%;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card:hover .caption h3{
+    margin-bottom: 15px;
+}
+
+.card:hover .caption p{
+    margin: 0 10%;
 }
 
 .card .caption h3{
@@ -409,9 +421,9 @@ form{
     font-family: 'Audiowide', cursive;
     color: #DD6031;
     font-size: 30px;
-    margin-left: -334px;
     margin-bottom: 25px;
     overflow: hidden;
+    text-align: left;
 }
 
 .contact h2:before{
@@ -559,23 +571,8 @@ footer .lower-footer{
         margin-top: 70px;
     }
 
-    .contact-form{
-        width:90%;
-        position: relative;
-        top: 0px;
-        margin-left: 40px;
-        margin:50px;
-    }
-
     .contact-form img{
         display: none;
-    }
-
-    .contact-form{
-        right: 0px;
-        top:0;
-        margin-left: 0%;
-        margin:30px;
     }
     
 }
@@ -589,6 +586,10 @@ footer .lower-footer{
 
     .contact .svg h1:after{
         width: 60%;
+    }
+
+    .inputBox .name-email , .inputBox .far{
+        width: 99%;
     }
 }
 
@@ -614,8 +615,10 @@ footer .lower-footer{
 @media (max-width: 633px){
     .inputBox .far,.inputBox #subject,.inputBox .btn,.inputBox #fname,.inputBox #email, .contact-form h2{
         width: 350px;
+
         /* margin-right: 50px; */
         margin-left: -30px;
+
     }
 
     footer{

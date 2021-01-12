@@ -95,20 +95,6 @@ nav a img{
     overflow:hidden;
 }
 
-#Vision-and-moto .vision-and-moto-head span:after, .contact .svg h1:after, .container h1:after{
-    border-bottom: 8px #79B791 double; 
-    animation: move 3s ; 
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    width: 80%; /* Change this to whatever width you want. */
-    animation: move 1s ; 
-}
-
-@keyframes move {
-    from {transform: translateX(-100%);}
-    to {transform: translateX(0%);}
-  }
-
 #Vision-and-moto .vision-pointer{
     font-size: 18px;
     padding: 10px 15px;
@@ -330,7 +316,6 @@ opacity: 0.7;
 
 .container{
     margin-top: 80px;
-    /* flex-wrap: wrap; */
 }
 
 .container .harry{
@@ -363,7 +348,7 @@ opacity: 0.7;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
 
@@ -380,7 +365,7 @@ opacity: 0.7;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -433,20 +418,6 @@ form{
     height:0;
 }
 
-.contact-form h2:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    width: 20%; /* Change this to whatever width you want. */
-    padding-top: 10px; /* This creates some space between the element and the border. */
-    border-bottom: 5px solid #79B791; /* This creates the border. Replace black with whatever color you want. */ 
-    animation: mymove 1s ;  
-}
-
-@keyframes mymove {
-    from {transform: translateX(-60%);}
-    to {transform: translateX(0%);}
-}
-
 .inputBox .far{
     height: 50px;
     width: 250px;
@@ -473,8 +444,6 @@ form{
     background: none;
     color: white;
     width: 95%;
-    /* margin-left: 10px; */
-    /* padding: 10px 20px; */
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -600,7 +569,10 @@ footer .lower-footer{
         text-align: center;
         margin-left: 0;
     }
-}
+
+    .events h1,.svg h1{
+        text-align: center;
+    }
 
 @media (max-width: 700px){
     #Welcome{
@@ -610,16 +582,13 @@ footer .lower-footer{
     #Welcome .welcometext{
         font-size: 3em;
     }
+
+    .inputBox #subject{
+        width: 80vw;
+    }
 }
 
 @media (max-width: 633px){
-    .inputBox .far,.inputBox #subject,.inputBox .btn,.inputBox #fname,.inputBox #email, .contact-form h2{
-        width: 350px;
-
-        /* margin-right: 50px; */
-        margin-left: -30px;
-
-    }
 
     footer{
         padding: 20px 50px;
@@ -638,35 +607,6 @@ footer .lower-footer{
         
     }
 }
-@media (max-width: 430px){
-
-    #Vision-and-moto .vision-and-moto-head{
-        /* font-size: 2rem; */
-        margin-left: -55px;
-        
-    }
-    #Vision-and-moto .vision-and-moto-head span:after, .contact .svg h1:after, .container h1:after{
-        border-bottom: 8px #79B791 double; 
-        animation: move 3s ; 
-        content: ""; /* This is necessary for the pseudo element to work. */ 
-        display: block; /* This will put the pseudo element on its own line. */
-        width: 80%; /* Change this to whatever width you want. */
-        animation: move 1s ;
-        margin-left: 42px; 
-    }
-    
-}
-
-@media (max-width: 500px){
-    #Welcome{
-        width: 380px;
-    }
-
-    #Welcome .welcometext{
-        font-size: 2.5em;
-    }
-}
-
 
 @media (max-width: 430px){
     .img-fluid{
@@ -697,11 +637,6 @@ footer .lower-footer{
         height: 1000px;
     }
 
-    .container {
-        width: 200px;
-        margin:0;
-        margin-left: 30px;
-    }
 
     .container h1{
         top:80px;
@@ -716,26 +651,45 @@ footer .lower-footer{
         width: 70%;
     }
 
-    .container .harry{
-        /* align-items: center; */
-        margin-left: 180px;
-        /* top:120px; */
-        width: 150%;
-    }
-
     .contact-form{
         width:90%;
         position: relative;
-        /* top: 140px; */
-        /* left: 0px; */
         
     }
     
     .inputBox .far{
         border-radius: 10px;
-        width: 46%;
+    }
+
+    nav{
+        width: 100vw;
+    }
+
+    nav .p1, nav .p2{
+        font-size: 15px;
+    }
+
+    #Vision-and-moto .vision-pointer{
+        max-width: 90vw;
+    }
+    
+}
+
+@media (max-width: 425px){
+
+    .activity-highlight{
+        margin-bottom: 130px;
     }
 }
 
+@media (max-width: 500px){
+    #Welcome{
+        width: 380px;
+    }
+
+    #Welcome .welcometext{
+        font-size: 2.5em;
+    }
+}
 
 

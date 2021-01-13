@@ -1,8 +1,9 @@
 // Particle.js running
 
-particlesJS.load('particles-js', '../../js/lib/particles/particle-about-us.json', function() {
+particlesJS.load('particles-js', '../../js/lib/particles/particle-achivements.json', function() {
     console.log('callback - particles.js config loaded');
 });
+
 
 var textWrapper = document.querySelector('.ml10 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

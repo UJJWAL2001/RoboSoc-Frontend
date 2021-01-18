@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+body{
+    background-color: #0E1717;
+    color:#EDF4ED
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: rgb(133,179,146);
+}
+ nav .container{
+     margin-top: 0;
+}
+
+nav .nav-brand-text{
+    width: 145px;
+}
+
+nav .nav-brand-text p{
+    margin: 0;
+}
+
+nav .nav-brand-text .p1{
+    font-weight: bold;
+}
+
+nav a img{
+    height: 70px;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: #EDF4ED;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
+    color: #EDF4ED;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active{
+    color: #EDF4ED;
+    text-shadow: 1px 1px 10px #EDF4ED;
+    border-bottom: 2px solid #EDF4ED;
+    padding-bottom: 7px;
+}
+
+/* Welcome */
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Welcome{
+    z-index: 1;
+}
+
+.welcometext{
+    font-size: 1.5em ;
+    font-family: 'Montserrat', sans-serif;
+    width: 900;
+}
+
+.ml10 {
+    position: relative;
+}
+
+.ml10 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.ml10 .letter {
+display: inline-block;
+line-height: 1em;
+transform-origin: 0 0;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+    z-index: 0;
+}
+
+/* Gallery */
+
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+    background-color: #3B3B3B;
+    padding: 20px;
+}
+
+footer .footer-logo img{
+    width: 250px;
+}
+
+footer .address{
+    margin-bottom: 100px;
+}
+
+footer h1{
+    color: #DD6031;
+    font-size: 25px;
+}
+
+footer .lower-footer .line{
+    margin: 10px auto;
+    width: 60vw;
+    height: 1px;
+    background-color: #79B791;
+}
+
+footer .lower-footer{
+    text-align: center; 
+}
+
+@media (max-width: 656px){
+    #Welcome{
+        width: 320px;
+    }
+
+}
+
+@media (max-width: 633px){
+
+    footer{
+        padding: 20px 50px;
+    }
+
+    footer .address{
+        margin-bottom: 10px;
+    }
+
+}
+
+

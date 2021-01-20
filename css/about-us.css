@@ -12,9 +12,8 @@ body{
 nav{
     background-color: rgb(133,179,146);
 }
-
-nav.navbar{
-    padding: 2px 10%;
+ nav .container{
+     margin-top: 0;
 }
 
 nav .nav-brand-text{

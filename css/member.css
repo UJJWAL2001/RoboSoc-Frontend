@@ -13,8 +13,8 @@ nav{
     background-color: rgb(133,179,146);
 }
 
-nav.navbar{
-    padding: 2px 10%;
+ nav .container{
+     margin-top: 0;
 }
 
 nav .nav-brand-text{
@@ -203,7 +203,7 @@ transform-origin: 0 0;
 }
 
 .card .icon:hover{
-    box-shadow: 0px 0px 10px #DD6031;;
+    box-shadow: 0px 0px 10px #DD6031; 
 }
 
 /*Footer*/

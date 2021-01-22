@@ -620,6 +620,7 @@ footer .lower-footer{
         font-size: 2rem;  
     }
 
+
     .container .harry .content-link {
         width: 200px;
         margin: 0;
@@ -630,6 +631,7 @@ footer .lower-footer{
         visibility: visible;
     }
     
+
 }
 
 @media (max-width: 430px){
@@ -683,6 +685,7 @@ footer .lower-footer{
     
     .inputBox .far{
         border-radius: 10px;
+
     }
 
     nav{
@@ -700,6 +703,38 @@ footer .lower-footer{
 }
 
 @media (max-width: 425px){
+
+    .activity-highlight{
+        margin-bottom: 130px;
+    }
+
+    nav{
+        width: 100vw;
+    }
+
+    nav .p1, nav .p2{
+        font-size: 15px;
+    }
+
+    #Vision-and-moto .vision-pointer{
+        max-width: 90vw;
+    }
+    
+}
+
+
+@media (max-width: 425px){
+=======
+@media (max-width: 500px){
+    #Welcome{
+        width: 380px;
+    }
+
+    #Welcome .welcometext{
+        font-size: 2.5em;
+    }
+}
+
 
     .activity-highlight{
         margin-bottom: 130px;

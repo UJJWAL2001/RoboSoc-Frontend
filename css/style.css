@@ -4,7 +4,8 @@
 
 body{
     background-color: #0E1717;
-    color:#EDF4ED
+    color:#EDF4ED;
+    overflow-x: hidden;
 }
 
 ::placeholder {
@@ -313,7 +314,6 @@ opacity: 0.7;
 
 
 /*Events*/
-
 .container{
     margin-top: 80px;
 }
@@ -323,7 +323,7 @@ opacity: 0.7;
     width: 320px;
     height: 420px;
     margin:15px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .container .harry span{
@@ -367,14 +367,28 @@ opacity: 0.7;
     left: 0;
     width: 100vw;
     height: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     z-index: 1;
 }
 
-.container .harry .content div{
-    padding: 40px;
+
+.container .harry .content-link a{     
+    position: relative; 
+    visibility: hidden;
+    background: #DD6031 ;
+    top: 50px;
+    left: 40%; 
+    color: #EDF4ED;
+    padding: 18px 30px;
+    letter-spacing: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+.container .harry .content .content-head{
+    padding: 10px;
+    /* width: 200px; */
     color: white;
     visibility: hidden;
     opacity:0;
@@ -382,7 +396,7 @@ opacity: 0.7;
     transition: 0.2s;
 }
 
-.container .harry:hover .content div{
+.container .harry:hover .content .content-head{
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
@@ -603,9 +617,21 @@ footer .lower-footer{
 @media (max-width: 501px){
 
     #Vision-and-moto .vision-and-moto-head{
-        font-size: 2rem;
-        
+        font-size: 2rem;  
     }
+
+
+    .container .harry .content-link {
+        width: 200px;
+        margin: 0;
+        padding:0;
+    }
+    
+    .container .harry .content-link a{
+        visibility: visible;
+    }
+    
+
 }
 
 @media (max-width: 430px){
@@ -659,6 +685,7 @@ footer .lower-footer{
     
     .inputBox .far{
         border-radius: 10px;
+
     }
 
     nav{
@@ -680,6 +707,38 @@ footer .lower-footer{
     .activity-highlight{
         margin-bottom: 130px;
     }
+
+    nav{
+        width: 100vw;
+    }
+
+    nav .p1, nav .p2{
+        font-size: 15px;
+    }
+
+    #Vision-and-moto .vision-pointer{
+        max-width: 90vw;
+    }
+    
+}
+
+
+@media (max-width: 425px){
+=======
+@media (max-width: 500px){
+    #Welcome{
+        width: 380px;
+    }
+
+    #Welcome .welcometext{
+        font-size: 2.5em;
+    }
+}
+
+
+    .activity-highlight{
+        margin-bottom: 130px;
+    }
 }
 
 @media (max-width: 500px){
@@ -691,5 +750,4 @@ footer .lower-footer{
         font-size: 2.5em;
     }
 }
-
 
